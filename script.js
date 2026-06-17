@@ -88,3 +88,23 @@ function updateClock(){
 setInterval(updateClock,1000);
 updateClock();
 
+function toggleStartMenu() {
+  const menu = document.getElementById("startMenu");
+  menu.classList.toggle("hidden");
+}
+
+// klik di luar buat nutup
+document.addEventListener("click", function (e) {
+  const menu = document.getElementById("startMenu");
+  const btn = document.querySelector(".start-btn");
+
+  if (!menu.contains(e.target) && !btn.contains(e.target)) {
+    menu.classList.add("hidden");
+  }
+});
+function toggleProgramsSubmenu(e) {
+  e.stopPropagation(); // biar gak nutup start menu
+
+  const submenu = document.getElementById("programsSubmenu");
+  submenu.classList.toggle("hidden");
+}
