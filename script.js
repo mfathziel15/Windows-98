@@ -108,3 +108,12 @@ function toggleProgramsSubmenu(e) {
   const submenu = document.getElementById("programsSubmenu");
   submenu.classList.toggle("hidden");
 }
+function playClickSound() {
+  const sound = document.getElementById("clickSound");
+
+  sound.currentTime = 0; // biar bisa dipencet berkali-kali
+  sound.play();
+}
+document.querySelectorAll('.menu-item').forEach(item => {
+  item.addEventListener('click', playClickSound);
+});
