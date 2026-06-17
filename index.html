@@ -32,11 +32,11 @@
 
    <div class="taskbar">
 
-    <button class="start-btn" onclick="toggleStartMenu()">
+    <button class="start-btn" onclick="playClickSound(); toggleStartMenu();">
         <img src="start.png" alt="">
           <div id="startMenu" class="start-menu hidden">
     <div class="menu-item">
-        <div class="menu-item has-sub" onclick="toggleProgramsSubmenu(event)">
+        <div class="menu-item has-sub" onclick="playClickSound(); toggleProgramsSubmenu(event);">
   📁 Programs
 
   <div id="programsSubmenu" class="submenu hidden">
@@ -217,7 +217,7 @@
         <img src="glitch.png" >
         </div>
         </div>
-        
+              <audio id="clickSound" src="Click.wav"></audio>      
 
 <script>
 function toggleStartMenu() {
