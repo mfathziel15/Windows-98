@@ -34,6 +34,24 @@
 
     <button class="start-btn">
         <img src="start.png" alt="">
+         <div id="startMenu" class="start-menu hidden">
+    <div class="menu-item">
+        <div class="menu-item has-sub" onclick="toggleProgramsSubmenu(event)">
+  📁 Programs
+
+  <div id="programsSubmenu" class="submenu hidden">
+    <div class="menu-item">📄 Notepad</div>
+    <div class="menu-item">🎨 Paint</div>
+    <div class="menu-item">💻 Command Prompt</div>
+    <div class="menu-item">🧮 Calculator</div>
+  </div>
+</div>
+</div>
+    <div class="menu-item">⚙️ Settings</div>
+    <div class="menu-item">🔍 Search</div>
+    <div class="menu-item">📄 Documents</div>
+    <hr>
+    <div class="menu-item">⏻ Shut Down</div>
         
     </button>
 
@@ -198,6 +216,11 @@
         </div>
         </div>
    <script src="script.js"></script>
+            <script>
+function toggleStartMenu() {
+  document.getElementById("startMenu").classList.toggle("hidden");
+}
+            </script>
 
 </body>
 </html>
