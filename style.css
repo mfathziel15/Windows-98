@@ -273,3 +273,59 @@ body{
     height: 350px;
     object-fit: cover;
 }
+.start-menu {
+  position: absolute;
+  bottom: 45px;
+  left: 5px;
+  width: 180px;
+  background: #c0c0c0;
+  border: 2px solid #808080;
+  box-shadow: 2px 2px black;
+  z-index: 9999;
+}
+
+.menu-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background: #000080;
+  color: white;
+}
+
+.hidden {
+  display: none;
+    } 
+.menu-item {
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-item:hover {
+  background: #000080;
+  color: white;
+}
+
+/* SUBMENU */
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 160px;
+  background: #c0c0c0;
+  border: 2px solid #808080;
+  box-shadow: 2px 2px black;
+  z-index: 10000;
+}
+
+/* supaya item submenu rapi */
+.submenu .menu-item {
+  white-space: nowrap;
+}
+
+/* hidden */
+.hidden {
+  display: none;
+}
